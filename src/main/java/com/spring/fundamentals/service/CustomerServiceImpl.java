@@ -2,6 +2,7 @@ package com.spring.fundamentals.service;
 
 import com.spring.fundamentals.model.Customer;
 import com.spring.fundamentals.repository.CustomerRepo;
+import com.spring.fundamentals.repository.HibernateCustomerRepoImpl;
 
 import java.util.List;
 
@@ -11,6 +12,10 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepo customerRepo;
+
+    public CustomerServiceImpl(CustomerRepo customerRepo) {
+        this.customerRepo = customerRepo;
+    }
 
     public List<Customer> findAll() {
         return customerRepo.findAll();
