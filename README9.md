@@ -1,0 +1,1 @@
+Basic application introducing some fundamental spring usage.
