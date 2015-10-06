@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * Created by jbrooks on 05/10/2015.
  */
-@Component("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
