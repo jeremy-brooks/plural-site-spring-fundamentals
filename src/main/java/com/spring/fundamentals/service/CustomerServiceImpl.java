@@ -17,7 +17,10 @@ public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepo customerRepo;
 
-    @Autowired
+    public CustomerServiceImpl() {
+        // bad practice to have multiple constructors but this works for the example!
+    }
+
     public CustomerServiceImpl(CustomerRepo customerRepo) {
         this.customerRepo = customerRepo;
         System.out.println("using constructor!");
@@ -27,7 +30,7 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepo.findAll();
     }
 
-
+    @Autowired
     public void setCustomerRepo(CustomerRepo customerRepo) {
         this.customerRepo = customerRepo;
         System.out.println("using setter!");
