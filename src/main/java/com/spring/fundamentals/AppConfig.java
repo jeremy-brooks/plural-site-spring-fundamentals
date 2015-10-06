@@ -15,15 +15,15 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan({"com.spring.fundamentals"})
 public class AppConfig {
 
-    @Bean(name = "customerService")
-    public CustomerService getCustomerService(){
-        CustomerServiceImpl customerService = new CustomerServiceImpl();
+//    @Bean(name = "customerService")
+//    public CustomerService getCustomerService(){
+//        CustomerServiceImpl customerService = new CustomerServiceImpl();
+//
+//        return customerService;
+//    }
 
-        return customerService;
-    }
-
-    @Bean(name = "customerRepo")
-    public CustomerRepo getCustomerRepo(){
-        return new HibernateCustomerRepoImpl();
-    }
+//    @Bean(name = "customerRepo")
+//    public CustomerRepo getCustomerRepo(){
+//        return new HibernateCustomerRepoImpl();
+//    }
 }
