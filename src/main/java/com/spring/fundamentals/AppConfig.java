@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
     @Bean(name = "customerService")
-    @Scope("singleton")
+    @Scope("prototype")
     public CustomerService getCustomerService(){
         CustomerServiceImpl customerService = new CustomerServiceImpl();
 
