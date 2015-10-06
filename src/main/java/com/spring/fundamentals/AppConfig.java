@@ -1,7 +1,5 @@
 package com.spring.fundamentals;
 
-import com.spring.fundamentals.repository.CustomerRepo;
-import com.spring.fundamentals.repository.HibernateCustomerRepoImpl;
 import com.spring.fundamentals.service.CustomerService;
 import com.spring.fundamentals.service.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Configurable;
