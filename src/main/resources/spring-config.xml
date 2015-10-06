@@ -5,7 +5,7 @@
 
     <bean name="customerRepo" class="com.spring.fundamentals.repository.HibernateCustomerRepoImpl"></bean>
 
-    <bean name="customerService" class="com.spring.fundamentals.service.CustomerServiceImpl" scope="singleton">
+    <bean name="customerService" class="com.spring.fundamentals.service.CustomerServiceImpl" scope="prototype">
         <constructor-arg name="customerRepo" ref="customerRepo"></constructor-arg>
     </bean>
 
