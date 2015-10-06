@@ -1,7 +1,6 @@
 package com.spring.fundamentals;
 
 import com.spring.fundamentals.service.CustomerService;
-import com.spring.fundamentals.service.CustomerServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
