@@ -2,7 +2,7 @@ package com.spring.fundamentals.service;
 
 import com.spring.fundamentals.model.Customer;
 import com.spring.fundamentals.repository.CustomerRepo;
-import com.spring.fundamentals.repository.HibernateCustomerRepoImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -11,12 +11,8 @@ import java.util.List;
  */
 public class CustomerServiceImpl implements CustomerService {
 
+    @Autowired
     private CustomerRepo customerRepo;
-
-    public CustomerServiceImpl(CustomerRepo customerRepo) {
-        this.customerRepo = customerRepo;
-        System.out.println("using constructor!");
-    }
 
     public List<Customer> findAll() {
         return customerRepo.findAll();
