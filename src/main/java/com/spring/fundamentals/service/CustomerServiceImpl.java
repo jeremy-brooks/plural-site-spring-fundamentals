@@ -15,6 +15,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     public CustomerServiceImpl(CustomerRepo customerRepo) {
         this.customerRepo = customerRepo;
+        System.out.println("using constructor!");
     }
 
     public List<Customer> findAll() {
